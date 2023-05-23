@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router";
 import { useSearchParams } from "react-router-dom";
 
-export default function Product() {
+function Product() {
   const { productId } = useParams();
   const navigate = useNavigate();
   const [queryParams] = useSearchParams();
@@ -36,3 +36,5 @@ export default function Product() {
     </div>
   );
 }
+
+export default Product;
